@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/css/tailwind.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+  <title>Platzi Travel</title>
+</head>
+<body class="font-Montserrat dark:bg-gray-900">
+  <nav class="w-full h-auto hidden bg-white py-4 px-8 fixed top-0 z-10 lg:flex lg:justify-between lg:items-center dark:bg-gray-800">
+    <div class="h-auto w-auto">
+      <p class="text-lg text-primary font-bold dark:text-white">Platzi Travel</p>
+    </div>
+    <div class="flex space-x-8">
+      <a class="nav-items" href="#home">Inicio</a>
+      <a class="nav-items" href="#recomendados">Recomendados</a>
+      <a class="nav-items" href="#rentas_destacadas">Rentas</a>
+      <a class="nav-items" href="#faqs">FAQs</a>
+      <a class="nav-items" href="#sobre_nosotros">Sobre nosotros</a>
+    </div>
+    <div class="flex space-x-4">
+      <a href="#">
+          <i class="nav-icons fa-search fa-solid text-primary dark:text-white"></i>
+      </a>
+      <button href="#" id="toggle">
+          <i class="nav-icons fa-moon fa-solid text-primary"></i>
+      </button>
+      <a href="#">
+          <i class="nav-icons fa-user fa-solid text-gray-200 dark:text-white"></i>
+      </a>
+    </div>
+  </nav>
+  <main class="w-full h-auto lg:mt-[60px]">
+    <section class="w-full h-auto">
+      <div class="w-full h-[480px] lg:relative lg:h-[586px]" id="home">
+        <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:justify-center lg:h-full lg:pl-16">
+          <input class="text-primary outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:ring-primary focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search" name="" id="">
+          <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+            <p class="text-4xl font-bold">Encuentra más ubicaciones como esta</p>
+          </div>
+          <button class="w-48 rounded-full bg-white text-base text-primary shadow-sm font-semibold p-4 transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
+            Explorar
+          </button>
+        </div>
+        <div class="w-full h-auto lg:h-full lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+        </div>
+        <div class="w-full h-[480px] lg:hidden bg-sanFrancisco bg-cover bg-center"></div>
+      </div>
+      <div class="p-6" id="recomendados">
+        <p class="mt-6 text-3xl font-semibold text-primary dark:text-white">Recomendados</p>
+        <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 scrollbar-hide overflow-y-hidden">
+          <div class="card">
+            <div class="card__img bg-yosemite"></div>
+            <div class="card__text">
+              <p class="card__text-title">Yosemite</p>
+              <p class="card__text-subtitle">Un respiro del mundo</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img bg-new_york"></div>
+            <div class="card__text">
+              <p class="card__text-title">New York</p>
+              <p class="card__text-subtitle">Gran ciudad, explora ahora!</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img bg-norway"></div>
+            <div class="card__text">
+              <p class="card__text-title">Norway</p>
+              <p class="card__text-subtitle">Paisajes increíbles</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img bg-seattle"></div>
+            <div class="card__text">
+              <p class="card__text-title">Seattle</p>
+              <p class="card__text-subtitle">Una ciudad para disgrutar al máximo</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img bg-switzerland"></div>
+            <div class="card__text">
+              <p class="card__text-title">Switzerland</p>
+              <p class="card__text-subtitle">El mejor chocolate caliente que probarás</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img bg-sydney bg-center"></div>
+            <div class="card__text">
+              <p class="card__text-title">Sydney</p>
+              <p class="card__text-subtitle">Conoce la famosísima Opera</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img bg-iceland"></div>
+            <div class="card__text">
+              <p class="card__text-title">Iceland</p>
+              <p class="card__text-subtitle">Grandes paisajes naturales</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img bg-europe bg-center"></div>
+            <div class="card__text">
+              <p class="card__text-title">Edinburgh</p>
+              <p class="card__text-subtitle">Castillos y tiempos mediavales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-full w-auto p-6" id="rentas_destacadas">
+        <p class="text-3xl font-semibold text-primary dark:text-white pb-6">Rentas destacadas</p>
+        <div class="w-full h-auto flex flex-col space-y-6 items-center justify-center lg:grid lg:gap-8 lg:grid-cols-3 lg:grid-rows-3 lg:space-y-0">
+          <div class="rentas__card bg-chicago lg:h-96 lg:w-full lg:col-span-3 lg:row-span-1 lg:bg-center">
+            <p class="rentas__card-title">Chicago</p>
+            <p class="rentas__card-text">2 habitaciones, baño y cocina</p>
+          </div>
+          <div class="rentas__card bg-LA bg-center lg:col-span-1 lg:row-span-2 lg:h-full">
+            <p class="rentas__card-title">Los Angeles</p>
+            <p class="rentas__card-text">4 habitaciones, 3 baños, cocina y piscina privada</p>
+          </div>
+          <div class="rentas__card bg-miami lg:h-full lg:w-full lg:bg-center lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:row-end-3">
+            <p class="rentas__card-title">Miami</p>
+            <p class="rentas__card-text">3 habitaciones, 2 baños, cocina y excelente vista al mar</p>
+          </div>
+          <div class="rentas__card bg-bali lg:h-full lg:w-full lg:bg-center lg:col-start-2 lg:col-end-4 lg:row-start-3 lg:row-end-4">
+            <p class="rentas__card-title">Bali</p>
+            <p class="rentas__card-text">2 habitaciones, baño, cocina y piscina privada</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-full p-6 pt-0" id="faqs">
+        <div class="w-full h-full pt-2 flex flex-col space-y-4">
+          <p class="text-3xl font-bold text-primary mt-6 dark:text-white">FAQs</p>
+          <div>
+            <p class="faqs__title">Política de Cancelación</p>
+            <p class="faqs__text">
+              Para estancias menores a una semana es importante avisar con 3 días de anticipación, de caso contario será sancionado.
+            </p>
+          </div>
+          <div>
+            <p class="faqs__title">Métodos de pago</p>
+            <p class="faqs__text">
+              Aceptamos distintos métodos de pago: VISA, MasterCard, American Express, Paypal y Binance
+            </p>
+          </div>
+          <div>
+            <p class="faqs__title">Mascotas</p>
+            <p class="faqs__text">
+              El tema de las mascotas dependerá directamente del anfitrión.</p>
+          </div>
+          <div>
+            <p class="faqs__title">Información de Seguridad</p>
+            <p class="faqs__text">
+              Todas nuestras estancias cuentan con seguro en caso de accidentes
+            </p>
+          </div>
+          <div>
+            <p class="faqs__title">Estancias Largas</p>
+            <p class="faqs__text">
+              Contamos con estancias de hasta 3 meses, en este caso es requerido un anticipo con un monto del 50% del valor de la renta
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="w-full h-auto bg-gray-50 text-gray-300 p-6 space-y-2 border-t border-gray-300 mb-16 lg:mb-0" id="sobre_nosotros">
+    <p class="text-lg font-semibold">Acerca de</p>
+    <p class="text-base">Inversores</p>
+    <p class="text-base">Trabajos</p>
+    <p class="text-base">Política de privacidad</p>
+    <p class="text-base">Términos y condiciones</p>
+    <p class="text-base">Platzi Travel, inc</p>
+    <p class="text-base">Síguenos</p>
+    <i class="fa-brands fa-twitter text-lg mr-1"></i>
+    <i class="fa-brands fa-instagram text-2xl"></i>
+  </footer>
+  <div id="tabBar" class="w-full h-16 bg-white flex items-center justify-center space-x-10 fixed left-0 bottom-0 border-t border-gray-300 shadow-md lg:hidden dark:bg-gray-800">
+      <a href="#home">
+        <i class="fa-solid fa-house text-xl text-gray-200 dark:text-white"></i>
+      </a>
+      <a href="#rentas_destacadas">
+        <i class="fa-solid fa-magnifying-glass text-xl text-primary"></i>
+      </a>
+      <a href="#recomendados">
+        <i class="fa-solid fa-heart text-xl text-gray-200 dark:text-white"></i>
+      </a>
+      <button id="toggle-sm">
+        <i class="fa-solid fa-moon text-xl text-gray-200 dark:text-primary"></i>
+      </button>
+      <a href="#home">
+        <i class="fa-solid fa-user text-xl text-gray-200 dark:text-white"></i>
+      </a>
+  </div>
+  <script>
+    const htmlElement = document.querySelector("html")
+    const toggleButton = document.querySelector("#toggle")
+    const toggleButtonSm = document.querySelector("#toggle-sm")
+    
+    toggleButton.addEventListener("click", ()=> {
+      htmlElement.classList.toggle('dark')
+    })
+    toggleButtonSm.addEventListener("click", ()=> {
+      htmlElement.classList.toggle('dark')
+    })
+    
+
+    // toggleButton.addEventListener("click", () => toogleDarkMode )
+    // toggleButtonSm.addEventListener("click", () => toogleDarkMode )
+
+    // const toogleDarkMode = () => {
+    //   htmlElement.classList.contains("dark") ?
+    //   htmlElement.classList.remove("dark") :
+    //   htmlElement.classList.add("dark")
+    // }
+  </script>
+</body>
+</html>

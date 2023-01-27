@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl
+}
+.card__img {
+  @apply w-full h-3/5 rounded-t-lg bg-cover
+}
+.card__text {
+  @apply w-full h-2/5 rounded-b-lg px-4 py-2 bg-secondary dark:bg-gray-700
+}
+.card__text-title {
+  @apply text-white font-bold text-xl
+}
+.card__text-subtitle {
+  @apply text-white text-sm
+}
+.card:nth-child(even) > .card__text {
+  @apply bg-white dark:bg-gray-800
+}
+.card:nth-child(even) > .card__text > .card__text-title,
+.card:nth-child(even) > .card__text > .card__text-subtitle {
+  @apply text-terciary dark:text-white
+}
+.rentas__card {
+  @apply w-full h-96 bg-cover rounded-xl lg:text-end
+}
+.rentas__card-title {
+  @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
+}
+.rentas__card-text {
+  @apply text-base pl-8 text-white mr-24 lg:mr-0 lg:pr-8
+}
+.faqs__title {
+  @apply text-xl font-semibold text-primary dark:text-white
+}
+.faqs__text {
+  @apply text-base pt-2 dark:text-gray-300
+}
+.nav-items {
+  @apply font-bold text-lg text-primary dark:text-white
+}
+
+.nav-icons{
+  @apply text-lg
+}
